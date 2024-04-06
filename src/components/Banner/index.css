@@ -1,0 +1,16 @@
+.banner {
+  min-height: 150px;
+  background-position: center;
+  background-size: contain 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner {
+    background-position: center;
+    background-size: cover;
+  }
+  .wrap-banner {
+    padding-top: 52px;
+  }
+}

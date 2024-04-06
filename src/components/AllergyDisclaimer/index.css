@@ -1,0 +1,32 @@
+.disclaimer {
+  width: 100vw;
+  position: fixed;
+  top: -3px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 3px 5px 10px #00000077;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.disclaimer .wrapper-disclaimer {
+  overflow: hidden;
+}
+
+.disclaimer h1 {
+  text-align: center;
+}
+
+#allergy {
+  display: none;
+}
+
+#allergy:checked ~ .disclaimer {
+  grid-template-rows: 1fr;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

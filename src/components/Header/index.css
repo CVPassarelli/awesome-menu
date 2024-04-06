@@ -1,0 +1,76 @@
+header {
+  padding: 14px 16px 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header h1 {
+  color: #fff;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1 2;
+  text-align: center;
+}
+
+.head {
+  position: relative;
+}
+
+.head .menu {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  color: #fff;
+  box-shadow: inset 0px 10px 10px #00000044;
+}
+
+.head .menu ul {
+  overflow: hidden;
+}
+
+.head .menu ul li {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.head #menu {
+  display: none;
+}
+
+.head #menu:checked ~ .menu {
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (min-width: 1280px) {
+  .head .wrap-menu {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .head .menu {
+    box-shadow: none;
+  }
+  .head .menu ul {
+    display: flex;
+    flex-direction: row;
+    overflow: unset;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .head .menu ul li {
+    width: 232px;
+    font-size: 20x;
+    height: 52px;
+    border-bottom: none;
+  }
+
+  .head .menu ul li.selected {
+    border-bottom: 2px solid #fff;
+  }
+}

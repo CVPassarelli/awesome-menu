@@ -1,0 +1,16 @@
+.basket-wrapper {
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+  background-color: #fff;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 1280px) {
+  .basket-wrapper {
+    display: none;
+  }
+}

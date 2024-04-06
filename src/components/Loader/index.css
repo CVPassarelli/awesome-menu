@@ -1,0 +1,33 @@
+.load-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.load-wrapper p {
+  font-size: 30px;
+}
+
+.load-wrapper .loader {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+.load-wrapper .loader img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
